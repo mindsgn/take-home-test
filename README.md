@@ -6,4 +6,23 @@
 - [x] On mobile only the first 4 should show
 - [ ] mobile responsiveness
 - [ ] Show More Button should trigger a smooth dropdown revealing the other 6 products.
-- [ ]
+
+## Getting Started
+
+1. clone repository
+
+```
+    git clone https://github.com/mindsgn/take-home-test
+```
+
+2. navigate into root directory
+
+```
+    cd take-home-test
+```
+
+3. launch website
+
+```
+    npx live-server
+```
