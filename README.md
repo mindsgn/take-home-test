@@ -6,6 +6,7 @@
 - [x] On mobile only the first 4 should show
 - [x] mobile responsiveness
 - [ ] Show More Button should trigger a smooth dropdown revealing the other 6 products.
+- [ ] The scrollbar thumb should increase to 6px height when hovering / touching it.
 
 ## Getting Started
 
@@ -26,3 +27,7 @@
 ```
     npx live-server
 ```
+
+## Challenges
+
+1. Struggled to get the scroll bar to react when hovering/touching it. not sure if its my browser.
