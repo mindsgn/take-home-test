@@ -122,7 +122,19 @@ itemsToDisplay.forEach((item, index) => {
               class="card-image rounded-xl bg-cover w-[9.88em] h-[9.88em] md:w-[22.19em] md:h-[22.19em]" style="background-image: url(${
                 item.image[0]
               });">
-              <div class=''></div>
+              <div class="p-2 flex flex-row justify-between">
+                ${
+                  item.bestSeller
+                    ? "<div class='rounded-full border-2 border-[#243c5a] p-2 bg-[#ffffff] text-xs'><p class='font-medium'>BEST SELLER</p></div>"
+                    : "<div></div>"
+                }
+
+                ${
+                  item.save
+                    ? `<div class='rounded-full border-2 border-[#243c5a] p-2 bg-[#5C7962] text-xs'><p class='text-[#ffffff] font-medium'>SAVE ${item.save} %</p></div>`
+                    : "<div></div>"
+                }
+            </div>
             </div>
             <div class="m-1 md:m-2 ">
               <p class="font-medium font-['Bebas Neue'] text-[#231F20]">${item.title.toLocaleUpperCase()}</p>
