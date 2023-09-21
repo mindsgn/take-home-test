@@ -114,8 +114,6 @@ const itemsToDisplay = isSmallScreen
 itemsToDisplay.forEach((item, index) => {
   const bestSellerItem = document.createElement("div");
   bestSellerItem.classList.add("card");
-
-  const defaultImage = `url(${item.image[0]})`;
   bestSellerItem.dataset.index = index;
 
   bestSellerItem.innerHTML = `
@@ -126,10 +124,12 @@ itemsToDisplay.forEach((item, index) => {
               });">
               <div class=''></div>
             </div>
-            <div class="m-5">
-              <p>${item.title}</p>
+            <div class="m-1 md:m-2 ">
+              <p class="font-medium font-['Bebas Neue'] text-[#231F20]">${item.title.toLocaleUpperCase()}</p>
               <div class="flex flex-row items-center">
-                ${generateStarRating(item.stars)}<div class="mx-2"><p>${
+                ${generateStarRating(
+                  item.stars
+                )}<div class="mx-2 text-[#707070]"><p class="text-xs">${
     item.reviews
   } Reviews</p></div>
               </div>
